@@ -37,4 +37,7 @@ export class User extends Model<User> {
 
   @Column
   phone: string;
+
+  @Column
+  age: number;
 }

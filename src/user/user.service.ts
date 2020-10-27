@@ -21,4 +21,12 @@ export class UserService {
 
     return { rows, count };
   }
+
+  create(name: string, email: string, age: number): Promise<User> {
+    return this.userModel.create({
+      firstName: name,
+      email,
+      age,
+    });
+  }
 }
